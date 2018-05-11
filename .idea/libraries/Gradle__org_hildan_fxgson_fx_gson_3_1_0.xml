@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.hildan.fxgson:fx-gson:3.1.0">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hildan.fxgson/fx-gson/3.1.0/f790089f4c7863ef5e8c2073bba8a5341627b4a5/fx-gson-3.1.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hildan.fxgson/fx-gson/3.1.0/10a4013cfa51098f5506d256cd0287e46f93635e/fx-gson-3.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

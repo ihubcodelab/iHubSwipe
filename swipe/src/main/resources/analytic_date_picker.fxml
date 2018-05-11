@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="165.0" prefWidth="235.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="swipe.view.DatePickerController">
+   <children>
+      <Label layoutX="15.0" layoutY="16.0" text="Ranges to compare (one required):" />
+      <Label layoutX="110.0" layoutY="40.0" text="to" />
+      <CheckBox fx:id="includeAggregate" layoutX="16.0" layoutY="99.0" mnemonicParsing="false" text="Include Total Aggregate Data">
+         <tooltip>
+            <Tooltip text="If the export should include the total com.fla.data collected since the beginning (09-17-2017 to Now)" />
+         </tooltip>
+      </CheckBox>
+      <Label layoutX="110.0" layoutY="70.0" text="to" />
+      <Button fx:id="okButton" layoutX="182.0" layoutY="119.0" mnemonicParsing="false" text="OK" />
+      <Button fx:id="cancelButton" layoutX="15.0" layoutY="119.0" mnemonicParsing="false" text="Cancel" />
+      <DatePicker fx:id="datePicker1" layoutX="15.0" layoutY="35.0" prefHeight="26.0" prefWidth="90.0" />
+      <DatePicker fx:id="datePicker2" layoutX="130.0" layoutY="35.0" prefHeight="26.0" prefWidth="90.0" />
+      <DatePicker fx:id="datePicker3" layoutX="15.0" layoutY="65.0" prefHeight="26.0" prefWidth="90.0" />
+      <DatePicker fx:id="datePicker4" layoutX="130.0" layoutY="65.0" prefHeight="26.0" prefWidth="90.0" />
+   </children>
+</AnchorPane>
