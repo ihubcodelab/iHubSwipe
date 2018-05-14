@@ -1,8 +1,21 @@
 package swipe.util;
 
+import javafx.scene.control.Alert;
+import org.apache.commons.io.FileUtils;
+import swipe.awsapi.AWSCRUD;
+import swipe.data.Constants;
 import swipe.data.Person;
 import swipe.data.Timestamp;
+
+import java.awt.*;
+import java.io.File;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Collection;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Provides a set of classes for specific com.fla.data points like time spent, unique visitors, average time, etc.
@@ -59,6 +72,9 @@ public class AnalyticUtil {
                 millis += t.getTimeLength().getMillis();
                 count++;
             }
+        }
+        if (count==0){
+            return 0;
         }
         return millis/count;
     }
@@ -132,10 +148,11 @@ public class AnalyticUtil {
     }
 
     public static void exportAnalytics(Collection<Person> people){
+        String CSVContents = "Month, Number of Unique Visitors, Average Visit Time, Total Time Spent By Visitors\n";
+        StringBuilder CSVCOntentsBuilder = new StringBuilder(CSVContents);
         int currentYear = Timestamp.Now().getYear();
         int currentMonth = Timestamp.Now().getMonth();
         LogManager.appendLog(String.format("ANALYTICS FOR %1$d", currentYear));
-        LogManager.appendLog("MONTH - UNIQUE VISITORS - AVG VISIT TIME - TOTAL TIME SPENT BY VISITORS");
         //starting with January, compile information for each month
         int days, hours, minutes, numVisitors, avgMinutes;
         long millis;
@@ -148,9 +165,56 @@ public class AnalyticUtil {
             millis = millis % HOUR_IN_MILLIS;
             minutes = (int) (millis/MINUTE_IN_MILLIS);
             avgMinutes =  (int) getAvgVisitTimeForMonth(month, currentYear, people)/MINUTE_IN_MILLIS;
-            String output = String.format("%4$d/%5$d  -   %6$d Visitors    -    %7$d Minutes   -    %1$d Days, %2$d Hours and %3$d Minutes"
+            String output = String.format("%4$d/%5$d, %6$d, %7$d Minutes, %1$d Days %2$d Hours and %3$d Minutes\n"
                     , days, hours, minutes, month, currentYear, numVisitors, avgMinutes);
-            LogManager.appendLog(output);
+            CSVCOntentsBuilder.append(output);
         }
+        CSVContents = CSVCOntentsBuilder.toString();
+        String filename = currentYear+"overallanalytics";
+        Path path = Paths.get(Constants.analyticsFolder.toString(), filename + ".csv");
+        try {
+            FileUtils.writeStringToFile(path.toFile(), CSVContents, Charset.defaultCharset());
+            Desktop.getDesktop().open(Constants.analyticsFolder);
+            Alert alert = new Alert(Alert.AlertType.INFORMATION, "First set done! This next one will take a while!");
+            alert.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Failed creating file." + e.getMessage());
+            alert.showAndWait();
+        }
+        //then generate the other analytics
+        majorStats(people);
+    }
+
+    public static void majorStats(Collection<Person> people){
+        int count;
+        HashMap<String, Integer> majorCount = new HashMap<>();
+        HashMap<String, Integer> collegeCount = new HashMap<>();
+        //Map<String, Integer> avgVisitTime;
+        for(Person p: people){
+            Map<String, Object> info = AWSCRUD.retrieveStudentInfo(p.getId());
+            if (info!=null) {
+                String college = (String) info.get("college");
+                String major = (String) info.get("major");
+                if (majorCount.containsKey(major)) {
+                    count = majorCount.remove(major) + 1;
+                    majorCount.put(major, count);
+                } else {
+                    majorCount.put(major, 1);
+                }
+                if (collegeCount.containsKey(college)) {
+                    count = collegeCount.remove(college) + 1;
+                    collegeCount.put(college, count);
+                } else {
+                    collegeCount.put(college, 1);
+                }
+            }
+        }
+
+        FileManager.saveHashMapToCSV("majors", "Major", "Number of Visitors", majorCount);
+        FileManager.saveHashMapToCSV("colleges", "College", "Number of Visitors", collegeCount);
+
     }
 }
+
+

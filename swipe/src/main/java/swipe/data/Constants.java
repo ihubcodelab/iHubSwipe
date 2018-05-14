@@ -12,6 +12,6 @@ public class Constants {
     public static File logFile;
     public static String logContents;
 
-    public final static String aboutLink = "https://github.com/baileyholl/Innovation-Hub-Analytics-Desktop";
+    public final static String aboutLink = "https://github.com/ihubcodelab/iHubSwipe";
 
 }

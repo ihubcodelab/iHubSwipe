@@ -18,9 +18,7 @@ import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
+import java.util.*;
 import java.util.List;
 
 public final class FileManager {
@@ -206,6 +204,26 @@ public final class FileManager {
             if(person.signedWaiverProperty() == null || person.getSignedWaiver() == null){
                 person.setSignedWaiver("No");
             }
+        }
+    }
+
+    public static void saveHashMapToCSV(String filename, String keyName, String valName, HashMap<String, Integer> input){
+        String CSVContents = keyName + ", " + valName + "\n";
+
+        StringBuilder CSVContentsBuilder = new StringBuilder(CSVContents);
+        for(String key:input.keySet()){
+            CSVContentsBuilder.append(key + ", "+ input.get(key).toString() + "\n");
+        }
+        CSVContents = CSVContentsBuilder.toString();
+
+        Path path = Paths.get(Constants.analyticsFolder.toString(), filename + ".csv");
+        try {
+            FileUtils.writeStringToFile(path.toFile(), CSVContents, Charset.defaultCharset());
+            Desktop.getDesktop().open(Constants.analyticsFolder);
+        } catch (IOException e) {
+            e.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Failed creating file." + e.getMessage());
+            alert.showAndWait();
         }
     }
 }

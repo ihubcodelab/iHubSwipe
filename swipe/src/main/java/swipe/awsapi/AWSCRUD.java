@@ -17,13 +17,11 @@ import swipe.data.Timestamp;
 import swipe.util.FileManager;
 import swipe.util.LogManager;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class AWSCRUD {
     static private String tableName = "Ihub_persons";
+    static private String studentInfoTable = "studentInfo";
     static private final String EMPTY_STRING = "҂҂҂";
 
 
@@ -169,6 +167,49 @@ public class AWSCRUD {
 
     }
 
+    static public Map<String, Object> retrieveStudentInfo(String id){
+        AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
+                .withRegion(Regions.US_EAST_2)
+                .build();
+        DynamoDB dynamoDB = new DynamoDB(client);
+        Table table = dynamoDB.getTable(studentInfoTable);
+
+        HashMap<String, String> nameMap = new HashMap<>();
+        nameMap.put("#id", "id");
+
+        HashMap<String, Object> valueMap = new HashMap<>();
+        valueMap.put(":id", id);
+
+        QuerySpec querySpec = new QuerySpec()
+                .withKeyConditionExpression("#id = :id")
+                .withNameMap(nameMap)
+                .withValueMap(valueMap);
+
+        ItemCollection<QueryOutcome> items;
+        Iterator<Item> iterator;
+        Item item;
+
+        try {
+            items = table.query(querySpec);
+            iterator = items.iterator();
+            while (iterator.hasNext()){
+                item = iterator.next();
+                return item.asMap();
+            }
+        } catch (Exception e){
+            LogManager.appendLogWithTimeStamp("error retrieving student info for id: " + id +" "+ e.getMessage());
+            return null;
+        }
+        return null;
+    }
+
+
+    /**
+     * Not currently very functional, needs exact name.
+     * Look into creating a GSI on the table over the name attribute
+     * @param searchTerm
+     * @return
+     */
     static public List<Person> searchName(String searchTerm){
         ArrayList<Person> output = new ArrayList<Person>();
         AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
