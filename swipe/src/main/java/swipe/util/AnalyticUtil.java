@@ -148,6 +148,11 @@ public class AnalyticUtil {
     }
 
     public static void exportAnalytics(Collection<Person> people){
+        statsForCurrentYearByMonth(people);
+        majorAndCollegeStats(people);
+    }
+
+    public static void statsForCurrentYearByMonth(Collection<Person> people){
         String CSVContents = "Month, Number of Unique Visitors, Average Visit Time, Total Time Spent By Visitors\n";
         StringBuilder CSVCOntentsBuilder = new StringBuilder(CSVContents);
         int currentYear = Timestamp.Now().getYear();
@@ -182,11 +187,9 @@ public class AnalyticUtil {
             Alert alert = new Alert(Alert.AlertType.ERROR, "Failed creating file." + e.getMessage());
             alert.showAndWait();
         }
-        //then generate the other analytics
-        majorStats(people);
     }
 
-    public static void majorStats(Collection<Person> people){
+    public static void majorAndCollegeStats(Collection<Person> people){
         int count;
         HashMap<String, Integer> majorCount = new HashMap<>();
         HashMap<String, Integer> collegeCount = new HashMap<>();
@@ -213,6 +216,10 @@ public class AnalyticUtil {
 
         FileManager.saveHashMapToCSV("majors", "Major", "Number of Visitors", majorCount);
         FileManager.saveHashMapToCSV("colleges", "College", "Number of Visitors", collegeCount);
+
+    }
+
+    public static void hourlyStats(Collection<Person> people){
 
     }
 }

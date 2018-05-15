@@ -24,7 +24,12 @@ public class AWSCRUD {
     static private String studentInfoTable = "studentInfo";
     static private final String EMPTY_STRING = "҂҂҂";
 
-
+    /**
+     * pass a person and it will be uploaded to AWS, or update an existing DynamoDB entry
+     * functionally this is create and update
+     * @param person
+     * @return
+     */
     static public boolean create(Person person){
         AmazonDynamoDB client = AmazonDynamoDBClientBuilder.standard()
                 .withRegion(Regions.US_EAST_2)

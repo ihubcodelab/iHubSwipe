@@ -28,6 +28,36 @@ public class Timestamp {
         end = "";
     }
 
+    /**
+     * returns true if this timestamp indicates that the user was here during the given hour
+     * @param hour hour in 24hr format (start at zero)
+     * @return true if the hour falls in the range
+     */
+    public boolean hereAtHour(int hour){
+        int startHour = Integer.parseInt(start.substring(11,13));
+        if (start.substring(17).toLowerCase().equals("pm")){
+            startHour+=12;
+        }
+        int endHour = Integer.parseInt(end.substring(11,13));
+        if (end.substring(17).toLowerCase().equals("pm")){
+            startHour+=12;
+        }
+        if ((startHour<=hour && hour<=endHour)){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    /**
+     * Check for unreasonable entries (like supre late sign out)
+     * @return
+     */
+    public boolean isValid(){
+        //TODO: Finish Stuff
+        return true;
+    }
+
     public static Timestamp Now(){
         return new Timestamp(getCurrentTime());
     }

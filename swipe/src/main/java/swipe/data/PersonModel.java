@@ -30,7 +30,7 @@ public class PersonModel {
                 param.notesProperty(),
                 param.signedWaiverProperty()
         });
-        observablePersonList.addListener((ListChangeListener<Person>) c -> System.out.println(""));
+
     }
     
     public Boolean add(Person p){

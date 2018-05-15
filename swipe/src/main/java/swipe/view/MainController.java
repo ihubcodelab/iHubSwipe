@@ -154,7 +154,7 @@ public class MainController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        //associates cells int he com.fla.view with Person object attributes
+        //associates cells in the tables with Person object attributes
         CIDColumn.setCellValueFactory(new PropertyValueFactory<>("id"));
         CNameColumn.setCellValueFactory(new PropertyValueFactory<>("name"));
         CEmailColumn.setCellValueFactory(new PropertyValueFactory<>("email"));
@@ -220,7 +220,7 @@ public class MainController implements Initializable {
 
     private void doubleClickCheck(MouseEvent event) {
         if (event.getClickCount()==2){
-            //we got a right click
+            //we got a double click
             editSelected();
         }
     }

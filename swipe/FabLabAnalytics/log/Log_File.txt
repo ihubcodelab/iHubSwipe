@@ -15130,3 +15130,27 @@ ANALYTICS FOR 2018
 
 ANALYTICS FOR 2018
 
+[05-15-2018 12:47 PM] Tison, Nicole with ID: 113384081 had their Certifications updated
+[05-15-2018 12:47 PM] Samuel Baskin was retrieved from AWS with id:  112964499
+[05-15-2018 12:47 PM] Samuel Baskin was signed in with ID: 112964499
+[05-15-2018 12:47 PM] Samuel Baskin with ID: 112964499 had their Certifications updated
+[05-15-2018 12:47 PM] Samuel Baskin with ID: 112964499 was edited.
+[05-15-2018 12:47 PM] Samuel Baskin was successfully sent to AWS with id:  112964499
+[05-15-2018 12:47 PM] Samuel Baskin was signed out(MANUAL) with ID: 112964499
+
+[05-15-2018 01:04 PM] Braxton Speaks with ID: L082960455 had their Certifications updated
+[05-15-2018 01:19 PM] AWS Retrieval Failure for id: 112971666
+[05-15-2018 01:19 PM] Error: null
+[05-15-2018 01:24 PM] AWS Retrieval Failure for id: 112971666
+[05-15-2018 01:24 PM] Error: null
+[05-15-2018 01:25 PM] Chris Tse with ID: 112971666 had their Certifications updated
+[05-15-2018 01:25 PM] Chris Tse was signed in with ID: 112971666
+[05-15-2018 01:25 PM] Chris Tse was added to the directory and signed in with ID: 112971666
+[05-15-2018 01:26 PM] Chris Tse was successfully sent to AWS with id:  112971666
+[05-15-2018 01:26 PM] Chris Tse was signed out with ID: 112971666
+
+[05-15-2018 02:07 PM] Samuel Baskin was retrieved from AWS with id:  112964499
+[05-15-2018 02:07 PM] Samuel Baskin was signed in with ID: 112964499
+[05-15-2018 02:07 PM] Samuel Baskin was successfully sent to AWS with id:  112964499
+[05-15-2018 02:07 PM] Samuel Baskin was signed out(MANUAL) with ID: 112964499
+
