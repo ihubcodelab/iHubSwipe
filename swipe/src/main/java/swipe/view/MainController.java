@@ -263,6 +263,10 @@ public class MainController implements Initializable {
                     if (getString().toLowerCase().equals("no")) {
                         setStyle("-fx-text-fill: #C14242");
                     }
+                    else
+                    {
+                        setStyle("-fx-text-fill: #000000");
+                    }
                 }
             }
             private String getString() {

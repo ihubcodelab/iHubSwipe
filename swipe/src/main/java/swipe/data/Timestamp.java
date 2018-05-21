@@ -50,8 +50,8 @@ public class Timestamp {
     }
 
     /**
-     * Check for unreasonable entries (like supre late sign out)
-     * @return
+     * Check for unreasonable entries (like super late sign out)
+     * @return boolean
      */
     public boolean isValid(){
         //TODO: Finish Stuff

@@ -15154,3 +15154,15 @@ ANALYTICS FOR 2018
 [05-15-2018 02:07 PM] Samuel Baskin was successfully sent to AWS with id:  112964499
 [05-15-2018 02:07 PM] Samuel Baskin was signed out(MANUAL) with ID: 112964499
 
+[05-21-2018 10:49 AM] Aaron Condreay with ID: 112870970 had their Certifications updated
+[05-21-2018 11:01 AM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 11:01 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 11:01 AM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 11:01 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 11:01 AM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 11:01 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 11:02 AM] error doing search for 112760048: Unable to load AWS credentials from any provider in the chain
+
+[05-21-2018 11:02 AM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 11:02 AM] Error: Unable to load AWS credentials from any provider in the chain
+
