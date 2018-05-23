@@ -1,4 +1,5 @@
 package swipe.view;
+import javafx.scene.input.MouseButton;
 import swipe.awsapi.AWSCRUD;
 import swipe.data.Constants;
 import swipe.data.Person;
@@ -219,9 +220,14 @@ public class MainController implements Initializable {
     }
 
     private void doubleClickCheck(MouseEvent event) {
-        if (event.getClickCount()==2){
+        if (event.getClickCount()==2) {
             //we got a double click
             editSelected();
+        }
+        // right click for sign in/sign out
+        else if (event.getButton() == MouseButton.SECONDARY)
+        {
+            forceSignInOut();
         }
     }
 
@@ -443,10 +449,19 @@ public class MainController implements Initializable {
         TableView<Person> tableView = getFocusedTableView();
         if(tableView != null) {
             Person person = tableView.getItems().get(tableView.getSelectionModel().getFocusedIndex());
-            if (checkInModel.contains(person)){
-                signOut(person, true);
-            } else {
-                signIn(person, true);
+            if (checkInModel.contains(person)) {
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Sign out " + getSelectedPerson().getName() + "?");
+                alert.showAndWait();
+                if (alert.getResult() == ButtonType.OK) {
+                    signOut(person, true);
+                }
+            }
+            else {
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Sign in " + getSelectedPerson().getName() + "?");
+                alert.showAndWait();
+                if (alert.getResult() == ButtonType.OK) {
+                    signIn(person, true);
+                }
             }
             refocusIdField(true);
         }

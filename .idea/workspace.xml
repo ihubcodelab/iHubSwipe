@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules/swipe_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/swipe_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swipe/.gradle/4.0/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/.gradle/4.0/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swipe/.gradle/4.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/.gradle/4.0/fileHashes/fileHashes.bin" afterDir="false" />
@@ -10,9 +9,15 @@
       <change beforePath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/fileSnapshots.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Braxton_SpeaksL082960455.json" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Braxton_SpeaksL082960455.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Corynn_Berka113063258.json" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Corynn_Berka113063258.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Craig_Edward_RiceL080335736.json" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Craig_Edward_RiceL080335736.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Jonathan_BrittonL083943378.json" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Jonathan_BrittonL083943378.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swipe/FabLabAnalytics/log/Log_File.txt" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/FabLabAnalytics/log/Log_File.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/data/PersonModel.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/data/PersonModel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swipe/src/main/java/swipe/data/Timestamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/src/main/java/swipe/data/Timestamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/MainController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/MainController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/MainController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/MainController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/SwipeException.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/SwipeException.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -141,15 +146,12 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Person.java">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="DatePickerController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/DatePickerController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="146">
-              <caret line="60" column="53" lean-forward="true" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="345">
+              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -157,10 +159,42 @@
       <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="239">
-              <caret line="267" column="34" selection-start-line="267" selection-start-column="34" selection-end-line="267" selection-end-column="34" />
+            <state relative-caret-position="127">
+              <caret line="224" column="27" selection-start-line="224" selection-start-column="27" selection-end-line="224" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#19197#19198#0" expanded="true" />
+                <element signature="e#19255#19256#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1497">
+              <caret line="138" column="30" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="30" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/AddController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2115">
+              <caret line="161" column="22" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#3146#3147#0" expanded="true" />
+                <element signature="e#3180#3181#0" expanded="true" />
+                <element signature="e#5860#5861#0" expanded="true" />
+                <element signature="e#5919#5920#0" expanded="true" />
+                <element signature="e#6656#6657#0" expanded="true" />
+                <element signature="e#6688#6689#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -180,7 +214,15 @@
       <find>red</find>
       <find>color</find>
       <find>waiverBox</find>
+      <find>edit</find>
       <find>waiver</find>
+      <find>file</find>
+      <find>File</find>
+      <find>help</find>
+      <find>sign</find>
+      <find>double</find>
+      <find>alert</find>
+      <find>selected</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -647,7 +689,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/view/CertController.java" />
-        <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/view/AddController.java" />
         <option value="$PROJECT_DIR$/swipe/build.gradle" />
         <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/data/Person.java" />
         <option value="$PROJECT_DIR$/README.md" />
@@ -658,12 +699,13 @@
         <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/util/FileManager.java" />
         <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/data/PersonModel.java" />
         <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/data/Timestamp.java" />
+        <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/view/AddController.java" />
         <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="22" />
     <option name="width" value="1440" />
     <option name="height" value="786" />
@@ -792,7 +834,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="waiver&#9;PSI&#9;JAVA://swipe.view.MainController#CWaiverColumn&#10;directory&#9;FILE&#9;file:///Users/marcuscrook/IdeaProjects/iHubSwipe/swipe/FabLabAnalytics/directory" />
+    <property name="SearchEverywhereHistoryKey" value="sign in&#9;PSI&#9;JAVA://swipe.view.MainController#signInButton&#10;layout&#9;ACTION&#9;Runner.Layout&#10;menu&#9;ACTION&#9;EditorPopupMenu&#10;file&#9;ACTION&#9;GotoFile&#10;waiver&#9;PSI&#9;JAVA://swipe.view.MainController#CWaiverColumn&#10;directory&#9;FILE&#9;file:///Users/marcuscrook/IdeaProjects/iHubSwipe/swipe/FabLabAnalytics/directory" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -1037,14 +1079,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526058177377</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="fixed red text issue in maincontroller">
+      <created>1526920711424</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1526920711425</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="786" extended-state="0" />
+    <frame x="-1" y="22" width="1440" height="786" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -1059,7 +1108,7 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24861111" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16527778" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
       <window_info anchor="right" id="Gradle" order="4" weight="0.3296875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1072,15 +1121,15 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Problems" order="7" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Changes" order="7" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.32907802" />
       <window_info anchor="bottom" id="Profiler" order="7" />
+      <window_info anchor="bottom" id="Problems" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" weight="0.32907802" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Application Servers" order="7" />
       <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3298611" />
     </layout>
   </component>
@@ -1091,7 +1140,8 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="fixed typo in README" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed typo in README" />
+    <MESSAGE value="fixed red text issue in maincontroller" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed red text issue in maincontroller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1113,13 +1163,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Timestamp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6090">
@@ -1156,9 +1199,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1845">
           <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1198,9 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
           <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1240,9 +1277,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1264,13 +1298,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="146">
           <caret line="25" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/DatePickerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1324,13 +1351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/IHubSwipe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4766">
@@ -1342,41 +1362,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/CertController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="180" column="37" selection-start-line="180" selection-start-column="34" selection-end-line="180" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/APIBackgroundService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/AnalyticUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-11">
-          <caret line="191" column="64" selection-start-line="191" selection-start-column="64" selection-end-line="191" selection-end-column="64" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/FileManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="156" column="61" selection-start-line="156" selection-start-column="58" selection-end-line="156" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/LogManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1397,13 +1386,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Certification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="94" column="21" selection-start-line="94" selection-start-column="19" selection-end-line="94" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/PersonModel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -1411,20 +1393,45 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/awsapi/AWSCRUD.java">
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/IHubSwipe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="155" column="19" selection-start-line="155" selection-start-column="16" selection-end-line="155" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Certification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="8" column="20" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/text/LayoutCache.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/AnalyticUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/CertController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2820">
+          <caret line="221" column="102" selection-start-line="221" selection-start-column="100" selection-end-line="221" selection-end-column="102" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="345">
+          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
           <folding>
             <element signature="e#3525#3526#0" expanded="true" />
             <element signature="e#3553#3554#0" expanded="true" />
@@ -1432,10 +1439,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/FileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1137">
+          <caret line="161" column="24" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/LogManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/awsapi/AWSCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3073">
+          <caret line="41" column="51" lean-forward="true" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/DatePickerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/AddController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="39" column="22" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="22" />
+        <state relative-caret-position="2115">
+          <caret line="161" column="22" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3146#3147#0" expanded="true" />
@@ -1450,8 +1488,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="60" column="53" lean-forward="true" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+        <state relative-caret-position="-1497">
+          <caret line="138" column="30" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1460,10 +1498,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="267" column="34" selection-start-line="267" selection-start-column="34" selection-end-line="267" selection-end-column="34" />
+        <state relative-caret-position="127">
+          <caret line="224" column="27" selection-start-line="224" selection-start-column="27" selection-end-line="224" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#19197#19198#0" expanded="true" />
+            <element signature="e#19255#19256#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -15166,3 +15166,208 @@ ANALYTICS FOR 2018
 [05-21-2018 11:02 AM] AWS Retrieval Failure for id: 112760048
 [05-21-2018 11:02 AM] Error: Unable to load AWS credentials from any provider in the chain
 
+[05-21-2018 11:43 AM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 11:43 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 11:43 AM] Marcus Crook with ID: 112760048 had their Certifications updated
+[05-21-2018 11:43 AM] Marcus Crook was signed in with ID: 112760048
+[05-21-2018 11:43 AM] Marcus Crook was added to the directory and signed in with ID: 112760048
+[05-21-2018 11:43 AM] Marcus Crook with ID: 112760048 was edited.
+[05-21-2018 11:43 AM] AWS Put Failure for id: 112760048
+[05-21-2018 11:43 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 11:43 AM] Marcus Crook was signed out with ID: 112760048
+[05-21-2018 11:44 AM] error doing search for 112760048: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 11:45 AM] Earl Cornwell with ID: D083692704 was edited.
+
+[05-21-2018 01:31 PM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 01:31 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:31 PM] Marcus Crook was signed in with ID: 112760048
+[05-21-2018 01:31 PM] Marcus Crook was added to the directory and signed in with ID: 112760048
+[05-21-2018 01:32 PM] Marcus Crook with ID: 112760048 had their Certifications updated
+[05-21-2018 01:32 PM] AWS Put Failure for id: 112760048
+[05-21-2018 01:32 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:32 PM] Marcus Crook was signed out with ID: 112760048
+[05-21-2018 01:32 PM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 01:32 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:32 PM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 01:32 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:32 PM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 01:32 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:32 PM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 01:32 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:32 PM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 01:32 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:32 PM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 01:32 PM] Error: Unable to load AWS credentials from any provider in the chain
+
+[05-21-2018 01:33 PM] AWS Retrieval Failure for id: 113440415
+[05-21-2018 01:33 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:33 PM] error doing search for 113440415: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:33 PM] error doing search for 113440415: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:34 PM] AWS Retrieval Failure for id: 113440415
+[05-21-2018 01:34 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:35 PM] Marcus Crook was signed in with ID: 112760048
+[05-21-2018 01:35 PM] Marcus Crook was added to the directory and signed in with ID: 112760048
+[05-21-2018 01:35 PM] AWS Put Failure for id: 112760048
+[05-21-2018 01:35 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:35 PM] Marcus Crook was signed out with ID: 112760048
+[05-21-2018 01:36 PM] Marcus Crook with ID: 112760048 was deleted from the directory.
+[05-21-2018 01:39 PM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 01:39 PM] Error: Unable to load AWS credentials from any provider in the chain
+
+[05-21-2018 01:41 PM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 01:41 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:41 PM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 01:41 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-21-2018 01:41 PM] AWS Retrieval Failure for id: 112760048
+[05-21-2018 01:41 PM] Error: Unable to load AWS credentials from any provider in the chain
+
+[05-23-2018 11:51 AM] AWS Retrieval Failure for id: 112760048
+[05-23-2018 11:51 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 11:51 AM] Marcus Crook was signed in with ID: 112760048
+[05-23-2018 11:51 AM] Marcus Crook was added to the directory and signed in with ID: 112760048
+[05-23-2018 11:51 AM] Marcus Crook with ID: 112760048 was edited.
+[05-23-2018 11:52 AM] AWS Put Failure for id: 112760048
+[05-23-2018 11:52 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 11:52 AM] Marcus Crook was signed out with ID: 112760048
+
+[05-23-2018 11:56 AM] AWS Retrieval Failure for id: L082960455
+[05-23-2018 11:56 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 11:56 AM] AWS Retrieval Failure for id: L082960455
+[05-23-2018 11:56 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 11:56 AM] AWS Retrieval Failure for id: L082960455
+[05-23-2018 11:56 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 11:56 AM] AWS Retrieval Failure for id: L082960455
+[05-23-2018 11:56 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 11:56 AM] AWS Retrieval Failure for id: L082960455
+[05-23-2018 11:56 AM] Error: Unable to load AWS credentials from any provider in the chain
+
+[05-23-2018 11:57 AM] AWS Retrieval Failure for id: 112658840
+[05-23-2018 11:57 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 11:57 AM] Hugh Mann was signed in with ID: 112658840
+[05-23-2018 11:57 AM] Hugh Mann was added to the directory and signed in with ID: 112658840
+[05-23-2018 11:58 AM] Marcus Crook with ID: 112760048 was deleted from the directory.
+[05-23-2018 11:58 AM] AWS Put Failure for id: 112760048
+[05-23-2018 11:58 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 11:58 AM] Marcus Crook was signed out with ID: 112760048
+[05-23-2018 11:59 AM] AWS Put Failure for id: 112658840
+[05-23-2018 11:59 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 11:59 AM] Hugh Mann was signed out with ID: 112658840
+
+[05-23-2018 12:00 PM] Hugh Mann with ID: 112658840 was deleted from the directory.
+[05-23-2018 12:00 PM] 113428314 with ID: Alexia Walton was edited.
+[05-23-2018 12:01 PM] AWS Retrieval Failure for id: 123456789
+[05-23-2018 12:01 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:01 PM] Abc Defg was signed in with ID: 123456789
+[05-23-2018 12:01 PM] Abc Defg was added to the directory and signed in with ID: 123456789
+[05-23-2018 12:02 PM] AWS Put Failure for id: 123456789
+[05-23-2018 12:02 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:02 PM] Abc Defg was signed out with ID: 123456789
+
+[05-23-2018 12:02 PM] Abc Defg with ID: 123456789 was edited.
+[05-23-2018 12:02 PM] AWS Retrieval Failure for id: 123456789
+[05-23-2018 12:02 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:03 PM] Abc Defg was signed in with ID: 123456789
+[05-23-2018 12:03 PM] Abc Defg was added to the directory and signed in with ID: 123456789
+[05-23-2018 12:03 PM] AWS Put Failure for id: 123456789
+[05-23-2018 12:03 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:03 PM] Abc Defg was signed out(MANUAL) with ID: 123456789
+
+[05-23-2018 12:04 PM] AWS Retrieval Failure for id: 123456789
+[05-23-2018 12:04 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:05 PM] Abc Defg was signed in with ID: 123456789
+[05-23-2018 12:05 PM] Abc Defg was added to the directory and signed in with ID: 123456789
+[05-23-2018 12:05 PM] AWS Put Failure for id: 123456789
+[05-23-2018 12:05 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:05 PM] Abc Defg was signed out with ID: 123456789
+
+[05-23-2018 12:09 PM] Braxton Speaks was signed in(MANUAL) with ID: L082960455
+[05-23-2018 12:10 PM] AWS Put Failure for id: L082960455
+[05-23-2018 12:10 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:10 PM] Braxton Speaks was signed out with ID: L082960455
+
+[05-23-2018 12:30 PM] Braxton Speaks was signed in(MANUAL) with ID: L082960455
+[05-23-2018 12:30 PM] AWS Put Failure for id: L082960455
+[05-23-2018 12:30 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:30 PM] Braxton Speaks was signed out with ID: L082960455
+
+[05-23-2018 12:31 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 12:31 PM] AWS Put Failure for id: L080335736
+[05-23-2018 12:31 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:31 PM] Craig Edward Rice was signed out with ID: L080335736
+
+[05-23-2018 12:33 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 12:33 PM] AWS Put Failure for id: L080335736
+[05-23-2018 12:33 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:33 PM] Craig Edward Rice was signed out with ID: L080335736
+
+[05-23-2018 12:35 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 12:35 PM] AWS Put Failure for id: L080335736
+[05-23-2018 12:35 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:35 PM] Craig Edward Rice was signed out with ID: L080335736
+
+[05-23-2018 12:40 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 12:40 PM] AWS Put Failure for id: L080335736
+[05-23-2018 12:40 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:40 PM] Craig Edward Rice was signed out(MANUAL) with ID: L080335736
+[05-23-2018 12:41 PM] Braxton Speaks with ID: L082960455 was edited.
+[05-23-2018 12:41 PM] AWS Put Failure for id: L082960455
+[05-23-2018 12:41 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 12:41 PM] Braxton Speaks was signed out(MANUAL) with ID: L082960455
+
+[05-23-2018 01:02 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 01:02 PM] AWS Put Failure for id: L080335736
+[05-23-2018 01:02 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:02 PM] Craig Edward Rice was signed out with ID: L080335736
+
+[05-23-2018 01:02 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 01:02 PM] AWS Put Failure for id: L080335736
+[05-23-2018 01:02 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:03 PM] Craig Edward Rice was signed out with ID: L080335736
+
+[05-23-2018 01:05 PM] Braxton Speaks was signed in(MANUAL) with ID: L082960455
+[05-23-2018 01:05 PM] Jonathan Britton was signed in(MANUAL) with ID: L083943378
+[05-23-2018 01:05 PM] AWS Put Failure for id: L082960455
+[05-23-2018 01:05 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:05 PM] Braxton Speaks was signed out(MANUAL) with ID: L082960455
+[05-23-2018 01:05 PM] AWS Put Failure for id: L083943378
+[05-23-2018 01:05 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:05 PM] Jonathan Britton was signed out(MANUAL) with ID: L083943378
+
+[05-23-2018 01:07 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 01:07 PM] AWS Put Failure for id: L080335736
+[05-23-2018 01:07 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:07 PM] Craig Edward Rice was signed out with ID: L080335736
+
+[05-23-2018 01:10 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 01:10 PM] AWS Put Failure for id: L080335736
+[05-23-2018 01:10 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:10 PM] Craig Edward Rice was signed out with ID: L080335736
+
+[05-23-2018 01:11 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 01:11 PM] AWS Put Failure for id: L080335736
+[05-23-2018 01:11 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:11 PM] Craig Edward Rice was signed out(MANUAL) with ID: L080335736
+[05-23-2018 01:12 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 01:12 PM] AWS Put Failure for id: L080335736
+[05-23-2018 01:12 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:12 PM] Craig Edward Rice was signed out with ID: L080335736
+
+[05-23-2018 01:13 PM] Corynn Berka was signed in(MANUAL) with ID: 113063258
+[05-23-2018 01:13 PM] AWS Put Failure for id: 113063258
+[05-23-2018 01:13 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:13 PM] Corynn Berka was signed out(MANUAL) with ID: 113063258
+
+[05-23-2018 01:14 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 01:14 PM] Corynn Berka was signed in(MANUAL) with ID: 113063258
+[05-23-2018 01:14 PM] AWS Put Failure for id: 113063258
+[05-23-2018 01:14 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:14 PM] Corynn Berka was signed out(MANUAL) with ID: 113063258
+[05-23-2018 01:14 PM] AWS Put Failure for id: L080335736
+[05-23-2018 01:14 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:14 PM] Craig Edward Rice was signed out(MANUAL) with ID: L080335736
+
+[05-23-2018 01:15 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 01:15 PM] AWS Put Failure for id: L080335736
+[05-23-2018 01:15 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:15 PM] Craig Edward Rice was signed out(MANUAL) with ID: L080335736
+
