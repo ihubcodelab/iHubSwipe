@@ -15380,3 +15380,12 @@ ANALYTICS FOR 2018
 [05-23-2018 01:32 PM] Error: Unable to load AWS credentials from any provider in the chain
 [05-23-2018 01:32 PM] Jennifer Chang was signed out(MANUAL) with ID: 112841548
 
+[05-23-2018 01:41 PM] Braxton Speaks was signed in(MANUAL) with ID: L082960455
+[05-23-2018 01:41 PM] Jennifer Chang was signed in(MANUAL) with ID: 112841548
+[05-23-2018 01:41 PM] AWS Put Failure for id: L082960455
+[05-23-2018 01:41 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:41 PM] Braxton Speaks was signed out(MANUAL) with ID: L082960455
+[05-23-2018 01:41 PM] AWS Put Failure for id: 112841548
+[05-23-2018 01:41 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:41 PM] Jennifer Chang was signed out(MANUAL) with ID: 112841548
+

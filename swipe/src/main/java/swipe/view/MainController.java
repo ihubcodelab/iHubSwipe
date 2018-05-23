@@ -445,6 +445,7 @@ public class MainController implements Initializable {
         }
     }
 
+    // get user feedback
     private void forceSignInOut() {
         TableView<Person> tableView = getFocusedTableView();
         if(tableView != null) {
