@@ -12,10 +12,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
 import swipe.util.FileManager;
-import swipe.view.AddController;
-import swipe.view.DatePickerController;
-import swipe.view.MainController;
-import swipe.view.CertController;
+import swipe.view.*;
 
 import java.util.ConcurrentModificationException;
 import java.util.Map;
@@ -46,12 +43,12 @@ public class Main extends Application {
         addController.setupStage();
         addController.initParentController(mainController);
 
-        FXMLLoader datePickerLoader = new FXMLLoader(getClass().getResource("/analytic_date_picker.fxml"));
-        Parent dpRoot = datePickerLoader.load();
-        DatePickerController datePickerController = datePickerLoader.getController();
-        datePickerController.setRoot(dpRoot);
-        datePickerController.setupStage();
-        datePickerController.initParentController(mainController);
+        FXMLLoader analyticsLoader = new FXMLLoader(getClass().getResource("/analytics.fxml"));
+        Parent dpRoot = analyticsLoader.load();
+        AnalyticsController analyticsController = analyticsLoader.getController();
+        analyticsController.setRoot(dpRoot);
+        analyticsController.setupStage();
+        analyticsController.initParentController(mainController);
 
         FXMLLoader certLoader = new FXMLLoader(getClass().getResource("/certification.fxml"));
         Parent cRoot = certLoader.load();
@@ -60,7 +57,7 @@ public class Main extends Application {
         certController.setupStage();
         certController.initParentController(mainController);
 
-        mainController.initControllers(addController, datePickerController, certController);
+        mainController.initControllers(addController, analyticsController, certController);
 
         primaryStage.setTitle("Innovation Hub Analytics "  + getVersion());
         primaryStage.setScene(new Scene(root, 1060  , 650));

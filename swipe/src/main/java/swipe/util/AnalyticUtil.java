@@ -13,9 +13,14 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.time.LocalDate;
+import java.time.chrono.Chronology;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.stream.IntStream;
 
 /**
  * Provides a set of classes for specific com.fla.data points like time spent, unique visitors, average time, etc.
@@ -54,6 +59,23 @@ public class AnalyticUtil {
             }
         }
         return millis;
+    }
+
+    /**
+     * gets input from analytics window, filters out timestamps that aren't in the range
+     * @param directory collection of all people in directory
+     * @param dateStart start date from analytics window
+     * @param dateEnd end date from analytics window
+     * @return HashMap of filtered timestamps lists for individuals, with the key being the associated person's ID
+     */
+    public static HashMap<String, List<Timestamp>> filterForDateRange(Collection<Person> directory, LocalDate dateStart, LocalDate dateEnd){
+        HashMap<String, List<Timestamp>> output = new HashMap<>();
+        for (Person person: directory){
+            ArrayList<Timestamp> tsHistory = person.getTimeStampHistory();
+            tsHistory.removeIf(ts ->!(ts.startLocalDate().isAfter(dateStart) && ts.startLocalDate().isBefore(dateEnd)));
+            output.put(person.getId(),tsHistory);
+        }
+        return output;
     }
 
     /**
@@ -136,7 +158,8 @@ public class AnalyticUtil {
     public static int getVisitCount(Collection<Person> personCollection){
         int visits = 0;
         for(Person p : personCollection){
-            visits += Integer.valueOf(p.getTimesVisited());
+            //visits += Integer.valueOf(p.getTimesVisited()); not using because past records for Times Visited are incorrect
+            visits += p.getTimeStampHistory().size();
         }
         return visits;
     }
@@ -148,15 +171,30 @@ public class AnalyticUtil {
     }
 
     public static void exportAnalytics(Collection<Person> people){
-        statsForCurrentYearByMonth(people);
-        majorAndCollegeStats(people);
+
+
+        //hourlyStats(people);
+        //statsForYearByMonth(people, 2017);
+        //majorAndCollegeStats(people);
     }
 
-    public static void statsForCurrentYearByMonth(Collection<Person> people){
+    /**
+     * Will get some basic stats from directory data by month for a given year
+     * and will save the data to a CSV file
+     * @param people
+     * @param currentYear set to 0 if you just want to grab the current year
+     */
+    public static void statsForYearByMonth(Collection<Person> people, int currentYear){
         String CSVContents = "Month, Number of Unique Visitors, Average Visit Time, Total Time Spent By Visitors\n";
         StringBuilder CSVCOntentsBuilder = new StringBuilder(CSVContents);
-        int currentYear = Timestamp.Now().getYear();
-        int currentMonth = Timestamp.Now().getMonth();
+        int currentMonth;
+        if (currentYear==0){
+            currentYear = Timestamp.Now().getYear();
+            currentMonth = Timestamp.Now().getMonth();
+        } else {
+            currentMonth = 12; //if we aren't looking at the current year, then we should analyze the whole year
+        }
+
         LogManager.appendLog(String.format("ANALYTICS FOR %1$d", currentYear));
         //starting with January, compile information for each month
         int days, hours, minutes, numVisitors, avgMinutes;
@@ -219,9 +257,125 @@ public class AnalyticUtil {
 
     }
 
-    public static void hourlyStats(Collection<Person> people){
+    /**
+     * counts visitor numbers for each hour tha that the Hub is open for
+     * i.e. 9am to 9pm
+     * @param timestamps collection of people's timestamps histories to use in analysis
+     * @return array of 12 ints with each representing and hour long interval
+     */
+    public static int[] hourlyVisitors(Collection<List<Timestamp>> timestamps){
+        //make an array to hold counts for hourly stats
+        int[] hourlyCounts = new int[12]; //representing 9am to 9pm
+        //loop through collection
+        //loop through timestamps of user, add to hourly counts
+        for (List<Timestamp> tsHistory : timestamps) {
+            for (Timestamp ts : tsHistory)
+                if (ts.isValid()) {
+                    for(int hour = 0; hour<12; hour++){
+                        if(ts.hereAtHour(hour+9)){
+                            hourlyCounts[hour] += 1;
+                        }
+                    }
+                }
+        }
+        return hourlyCounts;
 
     }
+
+    /**
+     * similar to hourlyStats method, sums up counts by day for visitors
+     * NOTE: Don't think it is getting unique visitors, might be padding the stats
+     * @param timestamps
+     * @return int array with each number indicating count for that day of the week (order is M T W T F S S)
+     */
+    public static int[] dailyVisitors(Collection<List<Timestamp>> timestamps){
+        //array for storing day info
+        int[] dailyCounts = new int[7];
+        for (List<Timestamp> tsHistory : timestamps) {
+            for (Timestamp ts : tsHistory)
+                if (ts.isValid()) {
+                    for(int day = 1; day<8; day++){
+                        if(ts.hereOnDay(day)){
+                            dailyCounts[day-1] += 1;
+                        }
+                    }
+                }
+        }
+        return dailyCounts;
+    }
+
+    public static int[] dailyAvgTime(Collection<List<Timestamp>> timestamps){
+        //array for storing day info
+        int[] dailyCounts = new int[7];
+        int personCount = 0;
+        for (List<Timestamp> tsHistory : timestamps) {
+            for (Timestamp ts : tsHistory) {
+                if (ts.isValid()) {
+                    for (int day = 1; day < 8; day++) {
+                        if (ts.hereOnDay(day)) {
+                            dailyCounts[day - 1] += ts.getTimeLength().getStandardMinutes();
+                        }
+                    }
+                }
+            }
+            personCount++;
+        }
+
+        return dailyCounts;
+    }
+
+    public static int[] numUniqueVisitors(Collection<List<Timestamp>> timestamps, boolean sortByDay, boolean sortByHour){
+        if(sortByDay && sortByHour) {
+            return null;
+        } else if (sortByDay) {
+            return null;
+        } else if (sortByHour) {
+            return null;
+        } else {
+            int[] output = {timestamps.size()};
+            return output;
+        }
+    }
+
+    private static int[] hourlyUniqueVisitors(Collection<List<Timestamp>> timestamps){
+        return null;
+    }
+
+    public static int[] numVisitors(Collection<List<Timestamp>> timestamps, boolean sortByDay, boolean sortByHour) {
+        if (sortByDay && sortByHour){
+            int[] dailyHourlyCounts = new int[84];
+            for (List<Timestamp> tsHistory : timestamps) {
+                for (Timestamp ts : tsHistory)
+                    if (ts.isValid()) {
+                        for(int day = 1; day<8; day++){
+                            if(ts.hereOnDay(day)){
+                                for(int hour = 0; hour<12; hour++){
+                                    if(ts.hereAtHour(hour+9)){
+                                        dailyHourlyCounts[hour+((day-1)*12)] += 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+            }
+            return dailyHourlyCounts;
+        } else if (sortByDay) {
+            return dailyVisitors(timestamps);
+        } else if (sortByHour) {
+            return hourlyVisitors(timestamps);
+        } else {
+            //just get data unsorted for all peoples
+            int[] visitors = {0};
+            for (List<Timestamp> tsHistory: timestamps){
+                for(Timestamp ts: tsHistory){
+                    if (ts.isValid()) visitors[0]++;
+                }
+            }
+            return visitors;
+        }
+
+    }
+
 }
 
 

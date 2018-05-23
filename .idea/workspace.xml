@@ -2,13 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/swipe/src/main/java/swipe/view/AnalyticsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/swipe_test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/swipe_test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsonUpdaterTool.py" beforeDir="false" afterPath="$PROJECT_DIR$/jsonUpdaterTool.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/.gradle/4.0/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/.gradle/4.0/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swipe/.gradle/4.0/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/.gradle/4.0/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swipe/.gradle/4.0/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/.gradle/4.0/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Braxton_SpeaksL082960455.json" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Braxton_SpeaksL082960455.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Jennifer_Chang112841548.json" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Jennifer_Chang112841548.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/fileSnapshots.bin" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/fileSnapshots.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/.gradle/4.0/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/FabLabAnalytics/directory/Samuel_Baskin112964499.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/swipe/FabLabAnalytics/log/Log_File.txt" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/FabLabAnalytics/log/Log_File.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/data/Timestamp.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/data/Timestamp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/util/AnalyticUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/util/AnalyticUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/AddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/AddController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/MainController$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/MainController$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/MainController.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/MainController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/SwipeException.class" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/classes/java/main/swipe/view/SwipeException.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/libs/IHub Swipe.jar" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/libs/IHub Swipe.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/build/resources/main/analytics.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/build/resources/main/analytics.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/src/main/java/swipe/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/src/main/java/swipe/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/src/main/java/swipe/data/Timestamp.java" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/src/main/java/swipe/data/Timestamp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/src/main/java/swipe/util/AnalyticUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/src/main/java/swipe/util/AnalyticUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/src/main/java/swipe/util/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/src/main/java/swipe/util/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/src/main/java/swipe/view/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/src/main/java/swipe/view/AddController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/swipe/src/main/resources/analytics.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/swipe/src/main/resources/analytics.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploadStudentInfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/uploadStudentInfo.py" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,9 +44,6 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/iHubSwipe$swipe__run_.ic" NAME="swipe [run] Coverage Results" MODIFIED="1526410980760" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -137,25 +156,43 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainController.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="447" column="24" selection-start-line="447" selection-start-column="24" selection-end-line="447" selection-end-column="24" />
+            <state relative-caret-position="480">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalyticUtil.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/AnalyticUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="199">
+              <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#19197#19198#0" expanded="true" />
-                <element signature="e#19255#19256#0" expanded="true" />
+                <element signature="e#13279#13280#0" expanded="true" />
+                <element signature="e#13300#13301#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Person.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Person.java">
+      <file leaf-file-name="FileManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/FileManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1497">
-              <caret line="138" column="30" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="30" />
+            <state relative-caret-position="1">
+              <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalyticsController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/AnalyticsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="157" column="9" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,6 +201,13 @@
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -174,18 +218,8 @@
       <find>DimensionType</find>
       <find>search</find>
       <find>web</find>
-      <find>red</find>
-      <find>color</find>
-      <find>waiverBox</find>
-      <find>edit</find>
-      <find>waiver</find>
-      <find>file</find>
-      <find>File</find>
-      <find>help</find>
-      <find>sign</find>
-      <find>double</find>
-      <find>alert</find>
-      <find>selected</find>
+      <find>System.out</find>
+      <find>openAdd</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -449,7 +483,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$/swipe" value="6105623728000" />
+        <entry key="$PROJECT_DIR$/swipe" value="6101650114000" />
         <entry key="$PROJECT_DIR$/swipe/.gradle" value="0" />
         <entry key="$PROJECT_DIR$/swipe/build.gradle" value="1681944813" />
         <entry key="$PROJECT_DIR$/swipe/gradle/wrapper/gradle-wrapper.properties" value="566444372" />
@@ -657,22 +691,22 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/data/Constants.java" />
         <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/awsapi/AWSCRUD.java" />
-        <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/Main.java" />
-        <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/util/AnalyticUtil.java" />
-        <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/util/FileManager.java" />
         <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/data/PersonModel.java" />
+        <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/Main.java" />
+        <option value="$PROJECT_DIR$/swipe/src/main/resources/analytics.fxml" />
+        <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java" />
         <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/data/Timestamp.java" />
         <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/view/AddController.java" />
-        <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java" />
+        <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/util/FileManager.java" />
+        <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/view/AnalyticsController.java" />
+        <option value="$PROJECT_DIR$/swipe/src/main/java/swipe/util/AnalyticUtil.java" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="786" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -685,44 +719,38 @@
         <subPane>
           <expand>
             <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
               <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
-              <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="gradle" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
               <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
               <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
             </path>
             <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
               <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
               <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -730,8 +758,8 @@
               <item name="swipe" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
               <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -740,8 +768,8 @@
               <item name="awsapi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
               <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -750,8 +778,8 @@
               <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
               <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -760,8 +788,8 @@
               <item name="security" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
               <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -770,8 +798,8 @@
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="iHubSwipe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iHubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
               <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
@@ -779,12 +807,35 @@
               <item name="swipe" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="swipe" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="MainController.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ihubSwipe" type="462c0819:PsiDirectoryNode" />
+              <item name="swipe" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ihubSwipe" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -798,10 +849,8 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="SearchEverywhereHistoryKey" value="sign in&#9;PSI&#9;JAVA://swipe.view.MainController#signInButton&#10;layout&#9;ACTION&#9;Runner.Layout&#10;menu&#9;ACTION&#9;EditorPopupMenu&#10;file&#9;ACTION&#9;GotoFile&#10;waiver&#9;PSI&#9;JAVA://swipe.view.MainController#CWaiverColumn&#10;directory&#9;FILE&#9;file:///Users/marcuscrook/IdeaProjects/iHubSwipe/swipe/FabLabAnalytics/directory" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.14246324" />
@@ -1001,6 +1050,13 @@
       <option name="testName" />
       <method />
     </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
       <Port>5050</Port>
@@ -1043,72 +1099,64 @@
       <option name="project" value="LOCAL" />
       <updated>1526058177377</updated>
     </task>
-    <task id="LOCAL-00002" summary="fixed red text issue in maincontroller">
-      <created>1526920711424</created>
+    <task id="LOCAL-00002" summary="Added some utility python scripts in the main directory, updated analytics methods">
+      <created>1526331816267</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1526920711425</updated>
+      <updated>1526331816268</updated>
     </task>
-    <task id="LOCAL-00003" summary="fixed red text issue in maincontroller">
-      <created>1527100239734</created>
+    <task id="LOCAL-00003" summary="Fixed extraneous newline prints in startup, added a analytics fxn, other small changes">
+      <created>1526411356624</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1527100239734</updated>
+      <updated>1526411356625</updated>
     </task>
-    <task id="LOCAL-00004" summary="fixed red text issue in maincontroller&#10;&#10;Updated clickCheck method for right click">
-      <created>1527100384738</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1527100384738</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="1302000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="22" width="1440" height="786" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.328" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24016854" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3286517" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Palette&#9;" order="10" />
+      <window_info id="Image Layers" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="15" side_tool="true" weight="0.328" />
+      <window_info anchor="right" id="Maven Projects" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28342247" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.328877" />
+      <window_info anchor="bottom" id="Terminal" order="14" />
+      <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.16527778" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3286517" />
-      <window_info anchor="right" id="Gradle" order="4" weight="0.3296875" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.24921875" />
+      <window_info anchor="bottom" id="Build" order="13" weight="0.32907802" />
+      <window_info anchor="right" id="Gradle" order="8" weight="0.3296875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3988764" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" id="JetGradle" order="3" />
+      <window_info id="UI Designer" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.39973262" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="right" id="JetGradle" order="5" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.32907802" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Changes" order="7" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Profiler" order="7" />
-      <window_info anchor="bottom" id="Problems" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" weight="0.32907802" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Application Servers" order="11" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Application Servers" order="7" />
-      <window_info anchor="right" id="Coverage" order="5" side_tool="true" weight="0.3298611" />
+      <window_info anchor="bottom" id="Changes" order="8" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="bottom" id="Profiler" order="9" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Problems" order="10" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.328877" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1118,23 +1166,13 @@
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
     <MESSAGE value="fixed typo in README" />
-    <MESSAGE value="fixed red text issue in maincontroller" />
-    <MESSAGE value="fixed red text issue in maincontroller&#10;&#10;Updated clickCheck method for right click" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed red text issue in maincontroller&#10;&#10;Updated clickCheck method for right click" />
+    <MESSAGE value="Added some utility python scripts in the main directory, updated analytics methods" />
+    <MESSAGE value="Fixed extraneous newline prints in startup, added a analytics fxn, other small changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed extraneous newline prints in startup, added a analytics fxn, other small changes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/swipe/src/main/java/swipe/awsapi/AWSCRUD.java</url>
-          <line>32</line>
-          <properties class="swipe.awsapi.AWSCRUD" method="create">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="28" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -1142,6 +1180,77 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/AnalyticsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="106" column="36" selection-start-line="106" selection-start-column="36" selection-end-line="106" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/CertController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="24" column="32" selection-start-line="24" selection-start-column="32" selection-end-line="24" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="44" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/AddController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="129" column="58" selection-start-line="129" selection-start-column="58" selection-end-line="129" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3146#3147#0" expanded="true" />
+            <element signature="e#3180#3181#0" expanded="true" />
+            <element signature="e#5860#5861#0" expanded="true" />
+            <element signature="e#5919#5920#0" expanded="true" />
+            <element signature="e#6656#6657#0" expanded="true" />
+            <element signature="e#6688#6689#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/FileManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1335">
+          <caret line="110" column="23" selection-start-line="110" selection-start-column="23" selection-end-line="110" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/awsapi/AWSCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="795">
+          <caret line="65" column="73" lean-forward="true" selection-start-line="65" selection-start-column="73" selection-end-line="65" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Timestamp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6090">
@@ -1167,10 +1276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
           <caret line="87" column="44" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
-          <folding>
-            <element signature="e#3525#3526#0" expanded="true" />
-            <element signature="e#3553#3554#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1178,6 +1283,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1845">
           <caret line="135" lean-forward="true" selection-start-line="135" selection-end-line="135" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1206,10 +1314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1305">
           <caret line="87" column="44" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
-          <folding>
-            <element signature="e#3525#3526#0" expanded="true" />
-            <element signature="e#3553#3554#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1217,6 +1321,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1800">
           <caret line="132" lean-forward="true" selection-start-line="132" selection-end-line="132" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1238,10 +1345,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1035">
           <caret line="87" column="44" selection-start-line="87" selection-start-column="44" selection-end-line="87" selection-end-column="44" />
-          <folding>
-            <element signature="e#3525#3526#0" expanded="true" />
-            <element signature="e#3553#3554#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1256,6 +1359,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="4" column="40" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1280,95 +1386,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/DatePickerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/resources/analytic_date_picker.fxml">
-      <provider selected="true" editor-type-id="text-editor" />
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/javafx-src.zip!/javafx/event/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/FabLabAnalytics/log/Log_File.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-25624" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Timestamp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/security/SecureString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-166">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9866">
-          <caret line="731" column="8" lean-forward="true" selection-start-line="731" selection-start-column="8" selection-end-line="731" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/javafx-src.zip!/javafx/util/Callback.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/javafx-src.zip!/javafx/scene/Node.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4766">
-          <caret line="1078" column="1" selection-start-line="1078" selection-start-column="1" selection-end-line="1078" selection-end-column="1" />
-          <folding>
-            <element signature="e#46057#46058#0" expanded="true" />
-            <element signature="e#46099#46100#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/APIBackgroundService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="120">
+            <caret line="8" selection-start-line="8" selection-end-line="8" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/WebUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
+        <state relative-caret-position="330">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="57" lean-forward="true" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/PersonModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="71" column="37" lean-forward="true" selection-start-line="71" selection-start-column="37" selection-end-line="71" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1381,71 +1427,94 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Certification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="20" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home/javafx-src.zip!/com/sun/javafx/text/LayoutCache.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/AnalyticUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="17" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/CertController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2820">
-          <caret line="221" column="102" selection-start-line="221" selection-start-column="100" selection-end-line="221" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="41" column="42" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-          <folding>
-            <element signature="e#3525#3526#0" expanded="true" />
-            <element signature="e#3553#3554#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/FileManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1137">
-          <caret line="161" column="24" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="24" />
+        <state relative-caret-position="180">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/LogManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="13" lean-forward="true" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/awsapi/AWSCRUD.java">
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3073">
-          <caret line="41" column="51" lean-forward="true" selection-start-line="41" selection-start-column="51" selection-end-line="41" selection-end-column="51" />
+        <state relative-caret-position="1152">
+          <caret line="320" column="56" selection-start-line="320" selection-start-column="56" selection-end-line="320" selection-end-column="56" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/security/SecureString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/PersonModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="26" column="45" selection-start-line="26" selection-start-column="45" selection-end-line="26" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Timestamp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/CertController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1530">
+          <caret line="127" column="5" selection-start-line="127" selection-start-column="5" selection-end-line="127" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/awsapi/AWSCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="197" column="43" selection-start-line="197" selection-start-column="43" selection-end-line="197" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1135">
+          <caret line="407" column="48" selection-start-line="407" selection-start-column="48" selection-end-line="407" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/AddController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="161" column="22" selection-start-line="161" selection-start-column="22" selection-end-line="161" selection-end-column="22" />
+        <state relative-caret-position="-528">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3146#3147#0" expanded="true" />
@@ -1458,31 +1527,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/data/Person.java">
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/FileManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1497">
-          <caret line="138" column="30" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="30" />
+        <state relative-caret-position="1">
+          <caret line="217" lean-forward="true" selection-start-line="217" selection-end-line="217" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/AnalyticsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="157" column="9" selection-start-line="157" selection-start-column="9" selection-end-line="157" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/DatePickerController.java">
+    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/util/AnalyticUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/swipe/src/main/java/swipe/view/MainController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="447" column="24" selection-start-line="447" selection-start-column="24" selection-end-line="447" selection-end-column="24" />
+        <state relative-caret-position="199">
+          <caret line="332" column="24" selection-start-line="332" selection-start-column="24" selection-end-line="332" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#19197#19198#0" expanded="true" />
-            <element signature="e#19255#19256#0" expanded="true" />
+            <element signature="e#13279#13280#0" expanded="true" />
+            <element signature="e#13300#13301#0" expanded="true" />
           </folding>
         </state>
       </provider>

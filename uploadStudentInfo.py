@@ -1,4 +1,6 @@
 """
+Student Info Uploader v1.0
+@author - Sam Baskin
 Tool to upload student info csv to AWS
 Get the CSV file containing info about students through Tom Wavering
 May want to change table or what gets uploaded

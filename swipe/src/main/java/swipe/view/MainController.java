@@ -127,7 +127,7 @@ public class MainController implements Initializable {
     private PersonModel checkInModel;
     protected PersonModel directoryModel;
     private AddController addController;
-    private DatePickerController datePickerController;
+    private AnalyticsController analyticsController;
     private CertController certController;
 
     public CertController getCertController() {
@@ -144,12 +144,12 @@ public class MainController implements Initializable {
         DirectoryTable.setItems(directoryModel.getObservableList());
     }
 
-    public void initControllers(AddController addController, DatePickerController datePickerController, CertController certController){
-        if(this.addController != null || this.datePickerController != null || this.certController != null){
+    public void initControllers(AddController addController, AnalyticsController analyticsController, CertController certController){
+        if(this.addController != null || this.analyticsController != null || this.certController != null){
             throw new IllegalStateException("Controllers already initialized");
         }
         this.addController = addController;
-        this.datePickerController = datePickerController;
+        this.analyticsController = analyticsController;
         this.certController = certController;
     }
 
@@ -198,7 +198,7 @@ public class MainController implements Initializable {
         conversionButton.setOnAction(event -> AWSCRUD.uploadDirectory(directoryModel));
         dlDirectoryButton.setOnAction(event -> AWSCRUD.downloadDirectory());
         exportDirectory.setOnAction(event ->  FileManager.getDirectoryAsCSV(directoryModel.getObservableList(), null));
-        exportAnalytics.setOnAction(event -> AnalyticUtil.exportAnalytics(directoryModel.getObservableList()));
+        exportAnalytics.setOnAction(event -> analyticsController.open(directoryModel.getObservableList()));
         aboutButton.setOnAction(event -> WebUtil.openWebpage(Constants.aboutLink));
         logTextArea.setText(Constants.logContents);
 
@@ -490,7 +490,6 @@ public class MainController implements Initializable {
     }
 
     private void changeLayout(Event event){
-        //Default to codelab settings - all true
         boolean strikes = true;
         boolean certs = true; //Whole certs tab
         boolean timestamp = true;

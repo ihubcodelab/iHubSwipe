@@ -226,4 +226,16 @@ public final class FileManager {
             alert.showAndWait();
         }
     }
+
+    public static void saveAnalyticsStringAsCSV(String filename, String contents){
+        Path path = Paths.get(Constants.analyticsFolder.toString(), filename+"hourly.csv");
+        try {
+            FileUtils.writeStringToFile(path.toFile(), contents, Charset.defaultCharset());
+            Desktop.getDesktop().open(Constants.analyticsFolder);
+        } catch (IOException e) {
+            e.printStackTrace();
+            Alert alert = new Alert(Alert.AlertType.ERROR, "Failed creating file." + e.getMessage());
+            alert.showAndWait();
+        }
+    }
 }

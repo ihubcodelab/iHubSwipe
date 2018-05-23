@@ -15154,17 +15154,66 @@ ANALYTICS FOR 2018
 [05-15-2018 02:07 PM] Samuel Baskin was successfully sent to AWS with id:  112964499
 [05-15-2018 02:07 PM] Samuel Baskin was signed out(MANUAL) with ID: 112964499
 
-[05-21-2018 10:49 AM] Aaron Condreay with ID: 112870970 had their Certifications updated
-[05-21-2018 11:01 AM] AWS Retrieval Failure for id: 112760048
-[05-21-2018 11:01 AM] Error: Unable to load AWS credentials from any provider in the chain
-[05-21-2018 11:01 AM] AWS Retrieval Failure for id: 112760048
-[05-21-2018 11:01 AM] Error: Unable to load AWS credentials from any provider in the chain
-[05-21-2018 11:01 AM] AWS Retrieval Failure for id: 112760048
-[05-21-2018 11:01 AM] Error: Unable to load AWS credentials from any provider in the chain
-[05-21-2018 11:02 AM] error doing search for 112760048: Unable to load AWS credentials from any provider in the chain
+[05-15-2018 03:52 PM] Samuel Baskin was retrieved from AWS with id:  112964499
+[05-15-2018 03:52 PM] Samuel Baskin was signed in with ID: 112964499
 
-[05-21-2018 11:02 AM] AWS Retrieval Failure for id: 112760048
-[05-21-2018 11:02 AM] Error: Unable to load AWS credentials from any provider in the chain
+[05-15-2018 03:55 PM] Samuel Baskin was retrieved from AWS with id:  112964499
+[05-15-2018 03:55 PM] Samuel Baskin was signed in with ID: 112964499
+
+[05-15-2018 03:57 PM] Samuel Baskin was retrieved from AWS with id:  112964499
+[05-15-2018 03:57 PM] Samuel Baskin was signed in with ID: 112964499
+[05-15-2018 04:11 PM] Samuel Baskin was successfully sent to AWS with id:  112964499
+[05-15-2018 04:11 PM] Samuel Baskin was signed out with ID: 112964499
+
+[05-15-2018 04:12 PM] Samuel Baskin was retrieved from AWS with id:  112964499
+[05-15-2018 04:12 PM] Samuel Baskin was signed in with ID: 112964499
+
+[05-15-2018 04:16 PM] Samuel Baskin was retrieved from AWS with id:  112964499
+[05-15-2018 04:16 PM] Samuel Baskin was signed in with ID: 112964499
+
+ANALYTICS FOR 2017
+
+ANALYTICS FOR 2017
+
+[05-17-2018 04:57 PM] Samuel Baskin was retrieved from AWS with id:  112964499
+[05-17-2018 04:57 PM] Samuel Baskin was signed in with ID: 112964499
+[05-17-2018 05:03 PM] Samuel Baskin with ID: 112964499 had their Certifications updated
+[05-17-2018 05:03 PM] Samuel Baskin was successfully sent to AWS with id:  112964499
+[05-17-2018 05:03 PM] Samuel Baskin was signed out with ID: 112964499
+
+[05-21-2018 01:22 PM] Samuel Baskin was retrieved from AWS with id:  112964499
+[05-21-2018 01:22 PM] Samuel Baskin was signed in with ID: 112964499
+[05-21-2018 01:25 PM] Samuel Baskin with ID: 112964499 had their Certifications updated
+[05-21-2018 01:48 PM] Samuel Baskin was successfully sent to AWS with id:  112964499
+[05-21-2018 01:48 PM] Samuel Baskin was signed out with ID: 112964499
+
+[05-23-2018 10:44 AM] AWS Retrieval Failure for id: 12345670000
+[05-23-2018 10:44 AM] Error: null
+
+[05-23-2018 12:06 PM] Samuel Baskin with ID: 112964499 was deleted from the directory.
+[05-23-2018 12:06 PM] AWS Retrieval Failure for id: 112964499
+[05-23-2018 12:06 PM] Error: null
+
+[05-23-2018 12:07 PM] AWS Retrieval Failure for id: 112964499
+[05-23-2018 12:07 PM] Error: null
+
+[05-23-2018 12:08 PM] AWS Retrieval Failure for id: 112964499
+[05-23-2018 12:08 PM] Error: null
+
+[05-23-2018 12:08 PM] AWS Retrieval Failure for id: 112964499
+[05-23-2018 12:08 PM] Error: null
+
+[05-23-2018 12:09 PM] AWS Retrieval Failure for id: 112964499
+[05-23-2018 12:09 PM] Error: null
+[05-23-2018 12:15 PM] AWS Retrieval Failure for id: 112964499
+[05-23-2018 12:15 PM] Error: null
+[05-23-2018 12:15 PM]  Samuel M. Baskin was signed in with ID: 112964499
+[05-23-2018 12:15 PM]  Samuel M. Baskin was added to the directory and signed in with ID: 112964499
+[05-23-2018 12:15 PM]  Samuel M. Baskin with ID: 112964499 had their Certifications updated
+[05-23-2018 12:15 PM]  Samuel M. Baskin with ID: 112964499 was edited.
+[05-23-2018 12:16 PM]  Samuel M. Baskin was successfully sent to AWS with id:  112964499
+[05-23-2018 12:16 PM]  Samuel M. Baskin was signed out(MANUAL) with ID: 112964499
+[05-23-2018 12:17 PM] error doing search for Samuel M. Baskin: Query condition missed key schema element: id (Service: AmazonDynamoDBv2; Status Code: 400; Error Code: ValidationException; Request ID: OM6N55IVHUK5D1CD1759K94Q2VVV4KQNSO5AEMVJF66Q9ASUAAJG)
 
 [05-21-2018 11:43 AM] AWS Retrieval Failure for id: 112760048
 [05-21-2018 11:43 AM] Error: Unable to load AWS credentials from any provider in the chain

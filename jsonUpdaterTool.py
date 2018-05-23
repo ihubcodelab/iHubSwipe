@@ -1,7 +1,3 @@
-import os
-import json
-
-
 """
 jsonUpdaterTool v1.0
 @author - Sam Baskin
@@ -9,6 +5,10 @@ Tool for updating old JSON directory files to the new format
 Make a Directory named 'output' in the folder with the json files
 Then move this script to that directory as well, and run it
 """
+
+import os
+import json
+
 def loopThruJSON():
     directory = os.getcwd()
     #loop through every .json file in the directory
