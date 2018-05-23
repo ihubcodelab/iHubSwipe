@@ -202,8 +202,8 @@ public class MainController implements Initializable {
         aboutButton.setOnAction(event -> WebUtil.openWebpage(Constants.aboutLink));
         logTextArea.setText(Constants.logContents);
 
-        CheckinTable.setOnMouseClicked(event -> doubleClickCheck(event));
-        DirectoryTable.setOnMouseClicked(event -> doubleClickCheck(event));
+        CheckinTable.setOnMouseClicked(event -> clickCheck(event));
+        DirectoryTable.setOnMouseClicked(event -> clickCheck(event));
 
         ToggleGroup layoutGroup = new ToggleGroup();
         generalLayout.setToggleGroup(layoutGroup);
@@ -219,7 +219,7 @@ public class MainController implements Initializable {
         Platform.runLater(() -> idField.requestFocus());
     }
 
-    private void doubleClickCheck(MouseEvent event) {
+    private void clickCheck(MouseEvent event) {
         if (event.getClickCount()==2) {
             //we got a double click
             editSelected();

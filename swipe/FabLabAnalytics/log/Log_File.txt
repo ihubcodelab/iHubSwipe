@@ -15371,3 +15371,12 @@ ANALYTICS FOR 2018
 [05-23-2018 01:15 PM] Error: Unable to load AWS credentials from any provider in the chain
 [05-23-2018 01:15 PM] Craig Edward Rice was signed out(MANUAL) with ID: L080335736
 
+[05-23-2018 01:32 PM] Craig Edward Rice was signed in(MANUAL) with ID: L080335736
+[05-23-2018 01:32 PM] Jennifer Chang was signed in(MANUAL) with ID: 112841548
+[05-23-2018 01:32 PM] AWS Put Failure for id: L080335736
+[05-23-2018 01:32 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:32 PM] Craig Edward Rice was signed out(MANUAL) with ID: L080335736
+[05-23-2018 01:32 PM] AWS Put Failure for id: 112841548
+[05-23-2018 01:32 PM] Error: Unable to load AWS credentials from any provider in the chain
+[05-23-2018 01:32 PM] Jennifer Chang was signed out(MANUAL) with ID: 112841548
+
