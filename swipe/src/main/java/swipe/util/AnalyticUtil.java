@@ -8,19 +8,13 @@ import swipe.data.Person;
 import swipe.data.Timestamp;
 
 import java.awt.*;
-import java.io.File;
 import java.io.IOException;
 import java.nio.charset.Charset;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.time.LocalDate;
-import java.time.chrono.Chronology;
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.HashMap;
+import java.util.*;
 import java.util.List;
-import java.util.Map;
-import java.util.stream.IntStream;
 
 /**
  * Provides a set of classes for specific com.fla.data points like time spent, unique visitors, average time, etc.
@@ -30,6 +24,8 @@ public class AnalyticUtil {
     public static final int DAY_IN_MILLIS = 86400000; //86 million
     public static final int HOUR_IN_MILLIS = 3600000; //3.6 million
     public static final int MINUTE_IN_MILLIS = 60000; // 60 thousand
+    private static final int[] DAYS = {1,2,3,4,5,6,7};
+    private static final int[] HOURS = {0,1,2,3,4,5,6,7,8,9,10,11};
     /**
      * Fetches the total time spent in the lab from all persons in the directory. An O(P*T) operation that should be used sparingly.
      * @param collection Collection of person objects
@@ -170,17 +166,10 @@ public class AnalyticUtil {
         return getTotalTimeSpentInText(time/visits);
     }
 
-    public static void exportAnalytics(Collection<Person> people){
-
-
-        //hourlyStats(people);
-        //statsForYearByMonth(people, 2017);
-        //majorAndCollegeStats(people);
-    }
-
     /**
      * Will get some basic stats from directory data by month for a given year
      * and will save the data to a CSV file
+     * ---not currently implemented----
      * @param people
      * @param currentYear set to 0 if you just want to grab the current year
      */
@@ -227,34 +216,166 @@ public class AnalyticUtil {
         }
     }
 
-    public static void majorAndCollegeStats(Collection<Person> people){
-        int count;
-        HashMap<String, Integer> majorCount = new HashMap<>();
-        HashMap<String, Integer> collegeCount = new HashMap<>();
-        //Map<String, Integer> avgVisitTime;
-        for(Person p: people){
-            Map<String, Object> info = AWSCRUD.retrieveStudentInfo(p.getId());
-            if (info!=null) {
-                String college = (String) info.get("college");
-                String major = (String) info.get("major");
-                if (majorCount.containsKey(major)) {
-                    count = majorCount.remove(major) + 1;
-                    majorCount.put(major, count);
-                } else {
-                    majorCount.put(major, 1);
-                }
-                if (collegeCount.containsKey(college)) {
-                    count = collegeCount.remove(college) + 1;
-                    collegeCount.put(college, count);
-                } else {
-                    collegeCount.put(college, 1);
+    public static int[] avgVisitTime(Collection<List<Timestamp>> timestamps, boolean sortByDay, boolean sortByHour){
+        int[] output;
+        if(sortByDay && sortByHour){
+            return dailyHourlyAvgVisitTime(timestamps);
+        } else if (sortByDay) {
+            return dailyAvgVisitTime(timestamps);
+        } else if (sortByHour) {
+            return hourlyAvgVisitTime(timestamps);
+        } else {
+            output = new int[1];
+            output[0] = overallAvgVisitTime(timestamps);
+            return output;
+        }
+    }
+
+    public static int overallAvgVisitTime(Collection<List<Timestamp>> timestamps){
+        int totalTimestampCount = 0;
+        long totalTimeInMillis = 0;
+        for (List<Timestamp> tsHistory :timestamps){
+            for(Timestamp ts: tsHistory){
+                if(ts.isValid()){
+                    totalTimeInMillis += ts.getTimeLength().getMillis();
+                    totalTimestampCount++;
                 }
             }
         }
+        if (totalTimestampCount>0){
+            return  (int) ((totalTimeInMillis/totalTimestampCount)/MINUTE_IN_MILLIS);
+        } else {
+            return 0;
+        }
+    }
 
-        FileManager.saveHashMapToCSV("majors", "Major", "Number of Visitors", majorCount);
-        FileManager.saveHashMapToCSV("colleges", "College", "Number of Visitors", collegeCount);
+    public static int[] dailyAvgVisitTime(Collection<List<Timestamp>> timestamps){
+        int[] output = new int[7];
+        for (int day: DAYS){
+            int totalTimestampCount = 0;
+            long totalTimeInMillis = 0;
+            for (List<Timestamp> tsHistory :timestamps){
+                for(Timestamp ts: tsHistory){
+                    if(ts.isValid() && ts.hereOnDay(day)){
+                        totalTimeInMillis += ts.getTimeLength().getMillis();
+                        totalTimestampCount++;
+                    }
+                }
+            }
+            if(totalTimestampCount>0){
+                output[day-1] = (int) ((totalTimeInMillis/totalTimestampCount)/MINUTE_IN_MILLIS);
+            } else {
+                output[day-1] = 0;
+            }
+        }
 
+        return output;
+    }
+
+    public static int[] hourlyAvgVisitTime(Collection<List<Timestamp>> timestamps){
+        int[] output = new int[12];
+        for (int hour: HOURS){
+            int totalTimestampCount = 0;
+            long totalTimeInMillis = 0;
+            for (List<Timestamp> tsHistory :timestamps){
+                for(Timestamp ts: tsHistory){
+                    if(ts.isValid() && ts.hereAtHour(hour+9)){
+                        totalTimeInMillis += ts.getTimeLength().getMillis();
+                        totalTimestampCount++;
+                    }
+                }
+            }
+            if(totalTimestampCount>0){
+                output[hour] = (int) ((totalTimeInMillis/totalTimestampCount)/MINUTE_IN_MILLIS);
+            } else {
+                output[hour] = 0;
+            }
+        }
+
+        return output;
+    }
+
+    public static int[] dailyHourlyAvgVisitTime(Collection<List<Timestamp>> timestamps){
+        int[] output = new int[84];
+        for (int day: DAYS){
+            for (int hour: HOURS){
+                int totalTimestampCount = 0;
+                long totalTimeInMillis = 0;
+                for (List<Timestamp> tsHistory :timestamps){
+                    for(Timestamp ts: tsHistory){
+                        if(ts.isValid() && ts.hereAtHour(hour+9) && ts.hereOnDay(day)){
+                            totalTimeInMillis += ts.getTimeLength().getMillis();
+                            totalTimestampCount++;
+                        }
+                    }
+                }
+                if(totalTimestampCount>0){
+                    output[hour + ((day-1) * 12)] = (int) ((totalTimeInMillis/totalTimestampCount)/MINUTE_IN_MILLIS);
+                } else {
+                    output[hour + ((day-1) * 12)] = 0;
+                }
+
+            }
+        }
+
+
+        return output;
+    }
+
+    /**
+     * gets the info for student year break down, using custom StudentInfo class defined at the bottom of this file
+     * AnalyticsController does not currently allow for doing anything but overall analytics for this,
+     * could be implemented if needed in the future
+     * @param directory
+     * @param sortByDay
+     * @param sortByHour
+     * @return
+     */
+    public static StudentInfo[] getStudentStandingInfo(HashMap<String, List<Timestamp>> directory, boolean sortByDay, boolean sortByHour){
+        StudentInfo[] output;
+        if(sortByDay && sortByHour){
+            return null;
+        } else if (sortByDay) {
+            return null;
+        } else if (sortByHour) {
+            return null;
+        } else {
+            output = new StudentInfo[1];
+            output[0] = getTotalStudentStandingInfo(directory);
+            return output;
+        }
+    }
+
+    public static StudentInfo getTotalStudentStandingInfo(HashMap<String, List<Timestamp>> directory){
+        int freshmen = 0;
+        int sophomores = 0;
+        int juniors = 0;
+        int seniors = 0;
+        int gradStudents = 0;
+        int other = 0;
+        for(String id : directory.keySet()){
+            Map<String, Object> info = AWSCRUD.retrieveStudentInfo(id);
+            if (info!=null){
+                String year = (String) info.get("year");
+                switch (year){
+                    case "Freshman": freshmen++;
+                        break;
+                    case "Sophomore": sophomores++;
+                        break;
+                    case "Junior": juniors++;
+                        break;
+                    case "Senior": seniors++;
+                        break;
+                    case "Graduate": gradStudents++;
+                        break;
+                    default: other++;
+                        break;
+
+                }
+            }
+        }
+        StudentInfo output = new StudentInfo(freshmen,sophomores,juniors,seniors,gradStudents,other);
+        return output;
     }
 
     /**
@@ -324,23 +445,124 @@ public class AnalyticUtil {
         return dailyCounts;
     }
 
+    /**
+     * This is called by the Analytics Controller to get stats for unique visitors based on the passed parameters from the controller's checkboxes
+      * @param timestamps
+     * @param sortByDay
+     * @param sortByHour
+     * @return an int array of an appropriate size for the given parameters
+     */
     public static int[] numUniqueVisitors(Collection<List<Timestamp>> timestamps, boolean sortByDay, boolean sortByHour){
         if(sortByDay && sortByHour) {
-            return null;
+            return dailyHourlyUniqueVisitors(timestamps);
         } else if (sortByDay) {
-            return null;
+            return dailyUniqueVisitors(timestamps);
         } else if (sortByHour) {
-            return null;
+            return hourlyUniqueVisitors(timestamps);
         } else {
             int[] output = {timestamps.size()};
             return output;
         }
     }
 
+    /**
+     * calculates unique visitors sorted by hour block
+     * if a record stretches over multiple blocks, it will defer to the earlier block
+     * @param timestamps
+     * @return
+     */
     private static int[] hourlyUniqueVisitors(Collection<List<Timestamp>> timestamps){
-        return null;
+        int[] output = new int[12];
+        for (int hour : HOURS){
+            for (List<Timestamp> tsHistory : timestamps){
+                if(wasHereAtHour(tsHistory,hour+9)){
+                    output[hour] += 1;
+                    continue;
+                }
+            }
+        }
+        return output;
     }
 
+    /**
+     * calculates unique visitors sorted by day of the week
+     * @param timestamps
+     * @return
+     */
+    private static int[] dailyUniqueVisitors(Collection<List<Timestamp>> timestamps){
+        int[] output = new int[7];
+        for(int day: DAYS){
+            for (List<Timestamp> tsHistory : timestamps){
+                if(wasHereAtDay(tsHistory,day)){
+                    output[day-1] += 1;
+                    continue;
+                }
+            }
+        }
+        return output;
+    }
+
+    /**
+     * calculates unique visitors sorting by both day of week and hour block
+     * @param timestamps
+     * @return
+     */
+    private static int[] dailyHourlyUniqueVisitors(Collection<List<Timestamp>> timestamps){
+        int[] output = new int[84];
+        for (int day: DAYS){
+            for (int hour: HOURS){
+                for (List<Timestamp> tsHistory: timestamps){
+                    if(wasHereAtHourDay(tsHistory, day, hour+9)){
+                        output[hour + ((day-1) * 12)] += 1;
+                        continue;
+                    }
+                }
+            }
+        }
+        return output;
+    }
+
+    /**
+     * checks to see if any record in the provided timestamp history meets the given day/hour time requirement
+     * @param tsHistory
+     * @param day
+     * @param hour
+     * @return true if one of the entries in the list is valid
+     */
+    private static boolean wasHereAtHourDay(List<Timestamp> tsHistory, int day, int hour){
+        for(Timestamp ts : tsHistory){
+           if(ts.isValid() && ts.hereAtHour(hour) && ts.hereOnDay(day)) {
+                return true;
+           }
+        }
+        return false;
+    }
+
+    private static boolean wasHereAtHour(List<Timestamp> tsHistory, int hour){
+        for(Timestamp ts : tsHistory){
+            if(ts.isValid() && ts.hereAtHour(hour)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static boolean wasHereAtDay(List<Timestamp> tsHistory, int day){
+        for(Timestamp ts : tsHistory){
+            if(ts.isValid() && ts.hereOnDay(day)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * Will get number of visitors for the given sort parameters (daily and hourly)
+     * @param timestamps
+     * @param sortByDay
+     * @param sortByHour
+     * @return an appropriately sized int array with visitor numbers
+     */
     public static int[] numVisitors(Collection<List<Timestamp>> timestamps, boolean sortByDay, boolean sortByHour) {
         if (sortByDay && sortByHour){
             int[] dailyHourlyCounts = new int[84];
@@ -372,6 +594,32 @@ public class AnalyticUtil {
                 }
             }
             return visitors;
+        }
+
+    }
+
+    /**
+     * Custom class used in returning year information for student records
+     */
+    public static class StudentInfo{
+        int freshmenCount;
+        int sophomoreCount;
+        int juniorCount;
+        int seniorCount;
+        int gradCount;
+        int otherCount;
+        public StudentInfo(int freshmenCount, int sophomoreCount, int juniorCount, int seniorCount, int gradCount, int otherCount){
+            this.freshmenCount = freshmenCount;
+            this.sophomoreCount = sophomoreCount;
+            this.juniorCount = juniorCount;
+            this.seniorCount = seniorCount;
+            this.gradCount = gradCount;
+            this.otherCount = otherCount;
+        }
+
+        @Override
+        public String toString() {
+            return freshmenCount + ", " + sophomoreCount + ", " + juniorCount + ", " + seniorCount + ", " + gradCount + ", " + otherCount;
         }
 
     }

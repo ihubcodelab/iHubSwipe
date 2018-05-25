@@ -228,7 +228,7 @@ public final class FileManager {
     }
 
     public static void saveAnalyticsStringAsCSV(String filename, String contents){
-        Path path = Paths.get(Constants.analyticsFolder.toString(), filename+"hourly.csv");
+        Path path = Paths.get(Constants.analyticsFolder.toString(), filename+".csv");
         try {
             FileUtils.writeStringToFile(path.toFile(), contents, Charset.defaultCharset());
             Desktop.getDesktop().open(Constants.analyticsFolder);

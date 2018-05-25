@@ -4,30 +4,21 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.DatePicker;
 import javafx.stage.Stage;
-import org.apache.commons.io.FileUtils;
-import swipe.data.Constants;
 import swipe.data.Person;
 import swipe.data.Timestamp;
 import swipe.util.AnalyticUtil;
 import swipe.util.FileManager;
-
-import javax.print.DocFlavor;
-import java.awt.*;
-import java.io.IOException;
 import java.net.URL;
-import java.nio.charset.Charset;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.List;
 import java.util.ResourceBundle;
+
 
 public class AnalyticsController implements Initializable {
 
@@ -65,6 +56,21 @@ public class AnalyticsController implements Initializable {
         //set default values for the datePickers here
         datePicker1.setValue(LocalDate.of(2017,9, 1));
         datePicker2.setValue(LocalDate.now());
+        //Don't let people do student demographics and daily/hourly, could change in the future
+        studentInfoCheckBox.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if(studentInfoCheckBox.isSelected()){
+                hourCheckBox.setSelected(false);
+                dayCheckBox.setSelected(false);
+            }
+        });
+        hourCheckBox.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if(hourCheckBox.isSelected()) studentInfoCheckBox.setSelected(false);
+        });
+        dayCheckBox.selectedProperty().addListener((observable, oldValue, newValue) -> {
+            if(dayCheckBox.isSelected())studentInfoCheckBox.setSelected(false);
+        });
+
+
         okButton.setOnAction(event -> runAnalytics());
         cancelButton.setOnAction(event -> close());
     }
@@ -102,60 +108,33 @@ public class AnalyticsController implements Initializable {
         boolean getNumVisitors = numVisitorsCheckBox.isSelected();
         boolean getNumUnique = numUniqueCheckBox.isSelected();
         boolean getStudentInfo = studentInfoCheckBox.isSelected();
-        String filename = getRangeForFilename();
-        int personCount = 0;
-
+        String filename = getRangeForFilename() + ((sortByDay && sortByHour) ? "dailyhourly" :
+                (sortByDay ? "daily" : (sortByHour ? "hourly" : "overall")));
         String CSVData =
                 ((sortByDay && sortByHour) ? "Day of Week, Hour Block" :
                         (sortByDay ? "Day of Week" : (sortByHour ? "Hour Block" : filename)))
                 +(getAvgVisitTime ? ", Avg. Visit Time (min)" : "")
                 +(getNumVisitors ? ", Num. Visitors" : "")
                 +(getNumUnique ? ", Num. Unique Visitors" : "")
-                +(getStudentInfo ? ", Student Info" : "")
+                +(getStudentInfo ? ", Freshmen, Sophomores, Juniors, Seniors, Grad Students, Other" : "")
                 +"\n";
         StringBuilder CSVBuilder = new StringBuilder(CSVData);
         int[] visitorCounts = AnalyticUtil.numVisitors(filteredDirectory.values(), sortByDay, sortByHour);
+        int[] uniqueVisitorCounts = AnalyticUtil.numUniqueVisitors(filteredDirectory.values(), sortByDay, sortByHour);
+        AnalyticUtil.StudentInfo[] studentInfos = AnalyticUtil.getStudentStandingInfo(filteredDirectory, sortByDay,sortByHour);
+        int[] avgVisitTimes = AnalyticUtil.avgVisitTime(filteredDirectory.values(), sortByDay, sortByHour);
 
-
-        // may want to refactor this code when/if marking by department happens
-        if (sortByDay && sortByHour){
-
-            for (int i = 0; i< visitorCounts.length; i++){
-                CSVBuilder.append(dayToString(i/12)+", "+hourToString(i%12)
-                        +(getAvgVisitTime ? ", " +visitorCounts[i] : "")
-                        +(getNumVisitors ? ", " +visitorCounts[i] : "")
-                        +(getNumUnique ? ", " +visitorCounts[i] : "")
-                        +(getStudentInfo ? ", " +visitorCounts[i] : "")
-                        +"\n");
-            }
-            CSVData = CSVBuilder.toString();
-            FileManager.saveAnalyticsStringAsCSV(filename, CSVData);
-        } else if (sortByDay) {
-            CSVData = "Day Of Week, Num. Visitors\n";
-            CSVBuilder = new StringBuilder(CSVData);
-            for (int i = 0; i< visitorCounts.length; i++){
-                CSVBuilder.append(dayToString(i)+", "+visitorCounts[i]+"\n");
-            }
-            CSVData = CSVBuilder.toString();
-            FileManager.saveAnalyticsStringAsCSV(filename, CSVData);
-        } else if (sortByHour) {
-            CSVData = "Hour Block, Num. Visitors\n";
-            CSVBuilder = new StringBuilder(CSVData);
-            for (int i = 0; i< visitorCounts.length; i++){
-                CSVBuilder.append(hourToString(i)+", "+visitorCounts[i]+"\n");
-            }
-            CSVData = CSVBuilder.toString();
-            FileManager.saveAnalyticsStringAsCSV(filename, CSVData);
-        } else {
-            //JUST SHOW AGGREGATE DATA
-            CSVData +=
-                    (getAvgVisitTime ? ", " +visitorCounts[0] : "")
-                    +(getNumVisitors ? ", " +visitorCounts[0] : "")
-                    +(getNumUnique ? ", " +visitorCounts[0] : "")
-                    +(getStudentInfo ? ", " +visitorCounts[0] : "")
-                    +"\n";
-            FileManager.saveAnalyticsStringAsCSV(filename, CSVData);
+        for (int i = 0; i< visitorCounts.length; i++){
+            CSVBuilder.append(((sortByDay && sortByHour) ? (dayToString(i/12)+", "+hourToString(i%12)) :
+                            (sortByDay ? dayToString(i) : (sortByHour ? hourToString(i) : "")))
+                    +(getAvgVisitTime ? ", " +avgVisitTimes[i] : "")
+                    +(getNumVisitors ? ", " +visitorCounts[i] : "")
+                    +(getNumUnique ? ", " +uniqueVisitorCounts[i] : "")
+                    +(getStudentInfo ? ", " +visitorCounts[i] : "")
+                    +"\n");
         }
+        CSVData = CSVBuilder.toString();
+        FileManager.saveAnalyticsStringAsCSV(filename, CSVData);
         stage.close();
     }
 
