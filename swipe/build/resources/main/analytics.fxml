@@ -23,7 +23,7 @@
       <Label layoutX="15.0" layoutY="71.0" text="Separate Analytics by:" />
       <CheckBox fx:id="numVisitorsCheckBox" layoutX="16.0" layoutY="182.0" mnemonicParsing="false" selected="true" text="Number of Visitors" />
       <CheckBox fx:id="numUniqueCheckBox" layoutX="16.0" layoutY="209.0" mnemonicParsing="false" selected="true" text="Number of Unique Visitors" />
-      <CheckBox fx:id="studentInfoCheckBox" layoutX="16.0" layoutY="238.0" mnemonicParsing="false" selected="true" text="Student Information" />
+      <CheckBox fx:id="studentInfoCheckBox" layoutX="16.0" layoutY="238.0" mnemonicParsing="false" selected="true" text="Student Year Info (will take a while)" />
       <Label layoutX="16.0" layoutY="126.0" text="Data to Include:" />
    </children>
 </AnchorPane>
