@@ -6,3 +6,5 @@ The application is written in Java, with a UI built in JavaFX. The backend is li
 
 For more information please email the Code Lab at 
 >ihubcodelab@gmail.com
+
+## Development environment setup and authentication info can be found in the wiki

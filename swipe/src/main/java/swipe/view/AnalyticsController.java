@@ -99,6 +99,8 @@ public class AnalyticsController implements Initializable {
     private void runAnalytics() {
         //set filteredDirectory to have timestamp collection filtered for date range
         filter();
+
+        AnalyticUtil.StudentInfo[] studentInfos;
         //get info from checkBoxes
         boolean sortByHour = hourCheckBox.isSelected();
         boolean sortByDay = dayCheckBox.isSelected();
@@ -121,7 +123,12 @@ public class AnalyticsController implements Initializable {
         StringBuilder CSVBuilder = new StringBuilder(CSVData);
         int[] visitorCounts = AnalyticUtil.numVisitors(filteredDirectory.values(), sortByDay, sortByHour);
         int[] uniqueVisitorCounts = AnalyticUtil.numUniqueVisitors(filteredDirectory.values(), sortByDay, sortByHour);
-        AnalyticUtil.StudentInfo[] studentInfos = AnalyticUtil.getStudentStandingInfo(filteredDirectory, sortByDay,sortByHour);
+        if(getStudentInfo){
+            studentInfos = AnalyticUtil.getStudentStandingInfo(filteredDirectory, sortByDay,sortByHour);
+        } else {
+            studentInfos = new AnalyticUtil.StudentInfo[1];
+        }
+
         int[] avgVisitTimes = AnalyticUtil.avgVisitTime(filteredDirectory.values(), sortByDay, sortByHour);
 
         for (int i = 0; i< visitorCounts.length; i++){
@@ -130,7 +137,7 @@ public class AnalyticsController implements Initializable {
                     +(getAvgVisitTime ? ", " +avgVisitTimes[i] : "")
                     +(getNumVisitors ? ", " +visitorCounts[i] : "")
                     +(getNumUnique ? ", " +uniqueVisitorCounts[i] : "")
-                    +(getStudentInfo ? ", " +visitorCounts[i] : "")
+                    +(getStudentInfo ? ", " +studentInfos[i] : "")
                     +"\n");
         }
         CSVData = CSVBuilder.toString();

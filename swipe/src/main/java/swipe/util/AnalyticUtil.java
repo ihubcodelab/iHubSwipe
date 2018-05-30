@@ -17,7 +17,7 @@ import java.util.*;
 import java.util.List;
 
 /**
- * Provides a set of classes for specific com.fla.data points like time spent, unique visitors, average time, etc.
+ * Provides a set of classes for specific points like time spent, unique visitors, average time, etc.
  */
 public class AnalyticUtil {
 
