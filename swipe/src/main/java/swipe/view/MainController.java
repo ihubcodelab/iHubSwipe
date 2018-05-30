@@ -241,12 +241,6 @@ public class MainController implements Initializable {
             // sign in or sign out selected individual
             forceSignInOut();
         }
-        // d key and control pressed
-        else if (event.getCode() == KeyCode.D && event.isControlDown())
-        {
-            // delete the selected individual
-            deleteSelected();
-        }
     }
 
 
