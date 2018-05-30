@@ -232,13 +232,20 @@ public class MainController implements Initializable {
         }
     }
 
-    // keyboard shortcuts for signin/signout
+    // keyboard shortcuts for sign in/sign out and delete
     private void keyCheck(KeyEvent event)
     {
         // s key and control pressed
         if (event.getCode() == KeyCode.S && event.isControlDown())
         {
+            // sign in or sign out selected individual
             forceSignInOut();
+        }
+        // d key and control pressed
+        else if (event.getCode() == KeyCode.D && event.isControlDown())
+        {
+            // delete the selected individual
+            deleteSelected();
         }
     }
 
