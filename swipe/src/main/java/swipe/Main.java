@@ -20,7 +20,7 @@ import java.util.Map;
 public class Main extends Application {
 
     //Must be updated at each release iteration.
-    private static final String VERSION = "1.4.4";
+    private static final String VERSION = "1.4.5";
 
     @Override
     public void start(Stage primaryStage) throws Exception{

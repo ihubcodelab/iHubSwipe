@@ -1,5 +1,6 @@
 package swipe.view;
 
+import sun.rmi.runtime.Log;
 import swipe.awsapi.AWSCRUD;
 import swipe.data.Certification;
 import swipe.data.Person;
@@ -135,7 +136,9 @@ public class AddController implements Initializable {
         this.selectedPerson = selectedPerson;
         idNumberField.setText(idValue);
         strikesField.setText("0");
-        if(idValue.charAt(0)=='1' && !isEditMode) populateStudentInfo();
+        if(!idValue.equals("")){
+            if(idValue.charAt(0)=='1' && !isEditMode) populateStudentInfo();
+        }
         this.isEditMode = editMode;
         if(selectedPerson != null && isEditMode){
             nameField.setText(selectedPerson.getName());
@@ -156,9 +159,13 @@ public class AddController implements Initializable {
      * if the user is a student we should be able to pre-populate some of their info
      */
     private void populateStudentInfo(){
-        Map<String, Object> studentInfo = AWSCRUD.retrieveStudentInfo(idNumberField.getText());
-        nameField.setText((String) studentInfo.get("name"));
-        emailField.setText((String) studentInfo.get("email"));
+        try {
+            Map<String, Object> studentInfo = AWSCRUD.retrieveStudentInfo(idNumberField.getText());
+            nameField.setText((String) studentInfo.get("name"));
+            emailField.setText((String) studentInfo.get("email"));
+        } catch (Exception e){
+            LogManager.appendLogWithTimeStamp("Unable to retrieve student info for population of fields. " + e.getMessage());
+        }
     }
 
     private String getStringFromCheck(CheckBox checkBox){
