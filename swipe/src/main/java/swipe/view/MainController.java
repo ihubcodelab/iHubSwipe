@@ -1,5 +1,5 @@
 package swipe.view;
-import javafx.scene.input.MouseButton;
+import javafx.scene.input.*;
 import swipe.awsapi.AWSCRUD;
 import swipe.data.Constants;
 import swipe.data.Person;
@@ -15,7 +15,6 @@ import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.scene.input.MouseEvent;
 import swipe.util.AnalyticUtil;
 import swipe.util.FileManager;
 import swipe.util.LogManager;
@@ -204,6 +203,8 @@ public class MainController implements Initializable {
 
         CheckinTable.setOnMouseClicked(event -> clickCheck(event));
         DirectoryTable.setOnMouseClicked(event -> clickCheck(event));
+        CheckinTable.setOnKeyPressed(event -> keyCheck(event));
+        DirectoryTable.setOnKeyPressed(event -> keyCheck(event));
 
         ToggleGroup layoutGroup = new ToggleGroup();
         generalLayout.setToggleGroup(layoutGroup);
@@ -226,6 +227,16 @@ public class MainController implements Initializable {
         }
         // right click for sign in/sign out
         else if (event.getButton() == MouseButton.SECONDARY)
+        {
+            forceSignInOut();
+        }
+    }
+
+    // keyboard shortcuts for signin/signout
+    private void keyCheck(KeyEvent event)
+    {
+        // s key and control pressed
+        if (event.getCode() == KeyCode.S && event.isControlDown())
         {
             forceSignInOut();
         }
